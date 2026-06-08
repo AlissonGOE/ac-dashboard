@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compilar",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-I.",
+                "main.c",
+                "shared_memory/source/shared_memory.c",
+                "telemetria/source/motor.c",
+                "telemetria/source/pneus.c",
+                "telemetria/source/suspensao.c",
+                "telemetria/source/veiculo.c",
+                "telemetria/source/carroceria.c",
+                "telemetria/source/sessao.c",
+                "telemetria/source/auxiliares.c",
+                "ui/source/menu.c",
+                "serial/source/serial.c",
+                "ui/source/shift_light.c",
+                "-o",
+                "ac_telemetria"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
